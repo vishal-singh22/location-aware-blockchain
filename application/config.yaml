@@ -1,0 +1,14 @@
+application:
+  name: "IoT-Blockchain-App"
+  version: "1.0"
+
+network:
+  channelName: "mychannel"
+  chaincodeName: "iotchain"
+  mspID: "Org1MSP"
+  cryptoPath: "../crypto-config"
+  connectionProfile: "../network/connection-profile.yaml"
+
+server:
+  port: 3000
+  host: "localhost"
