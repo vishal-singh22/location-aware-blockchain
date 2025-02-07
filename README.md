@@ -1,86 +1,30 @@
-Raft Protocol Implementation with Hyperledger Fabric
-📋 Project Overview
-A distributed blockchain network implementing the Raft consensus protocol using Hyperledger Fabric, demonstrating advanced distributed ledger technology with robust fault tolerance.
-🚀 Key Technologies
+# Raft Protocol Implementation with Hyperledger Fabric
 
-Blockchain: Hyperledger Fabric
-Consensus: Raft Protocol
-Chaincode: GoLang
-UI: Python Flask
-Monitoring: Hyperledger Explorer
+## Project Overview
 
-🔧 System Requirements
+This project demonstrates a comprehensive blockchain network implementation using the **Raft consensus protocol** with **Hyperledger Fabric**, showcasing distributed ledger technology.
 
-Docker 20.10+
-Docker Compose
-GoLang 1.16+
-Python 3.8+
-Hyperledger Fabric 2.5
+## System Architecture
 
-💻 Installation Guide
-Prerequisites Setup
+- **Blockchain**: Hyperledger Fabric  
+- **Consensus**: Raft Protocol  
+- **Chaincode**: GoLang  
+- **UI**: Python Flask  
+- **Monitoring**: Hyperledger Explorer  
 
-Clone Repository
-bashCopygit clone <repository-url>
+## Prerequisites
+
+Ensure the following dependencies are installed:
+
+- **Docker** 20.10+  
+- **Docker Compose**  
+- **GoLang** 1.16+  
+- **Python** 3.8+  
+- **Hyperledger Fabric** 2.5  
+
+## Installation Steps
+
+### 1. Clone Repository  
+```bash
+git clone 
 cd Raft_Protocol_Implementation
-
-Generate Crypto Materials
-bashCopycd blockchain-network
-./generate-artifacts.sh
-
-Start Fabric Network
-bashCopydocker-compose up -d
-
-Deploy Chaincode
-bashCopy./scripts/deployChaincode.sh
-
-Launch Flask UI
-bashCopycd flask-ui
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python app.py
-
-Start Hyperledger Explorer
-bashCopycd hyperledger-explorer
-./start-explorer.sh
-
-
-🌐 Network Architecture
-
-Orderer Nodes: 3 Raft consensus nodes
-Peer Nodes: 2 organizations with 2 peers each
-Channel: Single communication channel
-Chaincode: Custom Raft protocol implementation
-
-🔗 Access Points
-
-Blockchain Explorer: http://localhost:8080
-Flask UI: http://localhost:5000
-
-🔒 Security Features
-
-TLS encryption
-Mutual TLS authentication
-Certificate-based access control
-Restricted network communication
-
-🛠 Troubleshooting
-
-Verify Docker Containers
-bashCopydocker ps
-
-Check Network Logs
-bashCopydocker-compose logs
-
-
-📜 License
-Apache 2.0
-👥 Contributors
-
-[Your Name]
-[Contributor Names]
-
-📞 Contact
-Project Maintainer: [Your Name]
-Email: [Contact Email]
